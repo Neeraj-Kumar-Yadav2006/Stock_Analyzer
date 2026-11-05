@@ -1,0 +1,177 @@
+/* PAGE BACKGROUND */
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(135deg,#eef2ff,#e0f2fe);
+color:#111827;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
+text-align:center;
+}
+
+/* HEADER */
+
+.header{
+margin-bottom:30px;
+}
+
+.header h1{
+font-size:36px;
+color:#1e3a8a;
+margin-bottom:8px;
+}
+
+.header p{
+color:#475569;
+font-size:16px;
+}
+
+/* SEARCH BAR */
+
+.searchBox{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+margin-bottom:50px;
+}
+
+input{
+padding:12px;
+width:280px;
+border-radius:6px;
+border:1px solid #cbd5e1;
+font-size:15px;
+}
+
+button{
+padding:12px 20px;
+background:#2563eb;
+border:none;
+border-radius:6px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover
+
+/* WELCOME SECTION (3 CARDS) */
+
+.welcome{
+display:grid;
+grid-template-columns:repeat(3,260px);
+justify-content:center;
+gap:45px;
+margin-top:40px;
+}
+
+/* INFO CARDS */
+
+.infoCard{
+padding:28px;
+border-radius:14px;
+box-shadow:0 6px 20px rgba(0,0,0,0.12);
+text-align:center;
+transition:0.3s;
+color:#1f2937;
+}
+
+/* DIFFERENT CARD COLORS */
+
+.infoCard:nth-child(1){
+background:#e0f2fe;
+border-top:5px solid #0284c7;
+}
+
+.infoCard:nth-child(2){
+background:#ecfdf5;
+border-top:5px solid #059669;
+}
+
+.infoCard:nth-child(3){
+background:#fef3c7;
+border-top:5px solid #d97706;
+}
+
+/* CARD HOVER EFFECT */
+
+.infoCard:hover{
+transform:translateY(-8px);
+box-shadow:0 12px 28px rgba(0,0,0,0.18);
+}
+
+/* DASHBOARD CARDS */
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.1);
+margin-bottom:20px;
+text-align:left;
+}
+
+/* CHART BOX */
+
+.chartBox{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.1);
+margin-bottom:20px;
+}
+
+/* METRICS + SENTIMENT */
+
+.dashboard{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+/* JSON TEXT */
+
+pre{
+font-size:14px;
+white-space:pre-wrap;
+}
+/*pdf*/
+.downloadBtn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.downloadBtn:hover {
+  background: #1d4ed8;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width:900px){
+
+.searchBox{
+flex-direction:column;
+}
+
+.dashboard{
+grid-template-columns:1fr;
+}
+
+.welcome{
+grid-template-columns:1fr;
+}
+
+}
