@@ -1,0 +1,19 @@
+.env.example
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+
+# Node
+node_modules/
+
+.DS_Store
+*.zip
